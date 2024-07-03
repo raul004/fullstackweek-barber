@@ -17,3 +17,11 @@ model User {
   id String @id @default(uuid())
   name String
 }
+
+model Barbershop {
+  id String @id @default(uuid())
+  name String
+  address String
+  imageUrl String 
+  services Service[]
+}
